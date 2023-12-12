@@ -9,5 +9,5 @@ async def index():
     }
 
 @app.post("/add")
-async def add(a,b):
+async def add(a: int,b: int):
     return a+b
