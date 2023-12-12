@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 
 app = FastAPI()
 
@@ -7,3 +7,7 @@ async def index():
     return {
         "message": "This API on EC2,OK"
     }
+
+@app.post("/add")
+async def add(a,b):
+    return a+b
