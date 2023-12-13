@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/index")
 async def index():
     return {
         "message": "This API on EC2,OK"
