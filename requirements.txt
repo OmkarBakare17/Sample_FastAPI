@@ -5,5 +5,5 @@ fastapi[all]==0.110.0
 uvicorn[standard]==0.29.0
 sqlalchemy==2.0.30
 asyncpg==0.29.0
+wheel
 psycopg2-binary==2.9.9
-    
